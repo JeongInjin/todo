@@ -31,6 +31,7 @@
         addTodo(){
           if(this.newTodoItem !== ''){
             //this.$emit('addTodoItem',this.newTodoItem);
+            //뮤테이션은 commit으로 동작시킨다.
             this.$store.commit('addOneItem', this.newTodoItem);
             this.clearInput();
           }else{

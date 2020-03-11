@@ -3,10 +3,10 @@ import Vuex from 'vuex';
 
 Vue.use(Vuex);
 export const store = new Vuex.Store({
-  state:{
+  state:{//data
     price : 100
   },
-  getters:{
+  getters:{//computed
     originalPrice(state){
       return state.price;
     },
